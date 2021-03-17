@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+3  
+//  function go(a, b) {
+//      if(a>b) {
+//          alert("hi")
+//      }else if(a<b ) {
+//          alert( a+b );
+//      }
+//      return;
+//  }
+//  let a = parseInt(prompt());
+//  let b = parseInt(prompt());
+//  let c = go(a,b)
+//  document.write(c)
+
+
+4
+// function addNumbers() {
+//     firstNum = 4;
+//     secondNum = 8;
+//     result = firstNum + secondNum;
+//     return result;
+// }
+// result = 0;
+// result = addNumbers(); 
+// alert(result)
+
+
+// 5
+ let star = ['Polaris','Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+ let allstar = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Lep'];
+ let check = false;
+ 
+    function seach(a) {   
+        let check = false; 
+        for(let i=0;i<star.length;i++) {
+             if(a==star[i] ){
+                 alert(allstar[i]);   
+                    check = true;
+                return allstar[i];
+                }
+            
+        }if(check==false) {
+            alert('khong thay');                
+    }
+}
+let a = prompt();
+let b = seach(a);
+document.write(b)
+    </script>
+    
+    
+</body>
+</html>
