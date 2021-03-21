@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong ><h3>Add New Product</h3></strong>
+    <input id="1" placeholder="New product" type="text"> <button onclick="add()" id="2" style="background-color:rgb(52, 214, 52);" >Add</button>
+    <strong ><h3>Display All Product</h3></strong>
+    <strong>Product Name</strong>
+    <br><br>    
+    <table>
+    <tr>
+        <th scope="col" id="8" style="width: 350px;">1</th>
+        <th scope="col" ><button onclick="edit()" id="9" style="background-color:rgb(52, 214, 52);">Edit</button></th>
+        <th scope="col" ><button onclick="delete1()" id="10" style="background-color:rgb(52, 214, 52);">Delete</button></th>
+    <tr>
+        <th scope="col" id="11" style="width: 350px;">1</th>
+        <th scope="col"  ><button id="12" style="background-color:rgb(52, 214, 52);">Edit</button></th>
+        <th scope="col" ><button id="13" style="background-color:rgb(52, 214, 52);">Delete</button></th>
+    </tr>
+    <tr>
+        <th scope="col" id="14" style="width: 350px;">1</th>
+        <th scope="col"  ><button id="15" style="background-color:rgb(52, 214, 52);">Edit</button></th>
+        <th scope="col" ><button id="16" style="background-color:rgb(52, 214, 52);">Delete</button></th>
+    </tr>
+    <tr>
+        <th scope="col" id="17" style="width: 350px;">1</th>
+        <th scope="col"  ><button id="18" style="background-color:rgb(52, 214, 52);">Edit</button></th>
+        <th scope="col"><button id="19" style="background-color:rgb(52, 214, 52);">Delete</button></th>
+    </tr>
+    <tr>
+        <th scope="col" id="20" style="width: 350px;">1</th>
+        <th scope="col" ><button id="21" style="background-color:rgb(52, 214, 52);">Edit</button></th>
+        <th scope="col" ><button id="22" style="background-color:rgb(52, 214, 52);">Delete</button></th>
+    </tr>
+   
+    </table>
+
+
+</body>
+<script>
+    let arrname = [];    
+    function add() {
+        let nhap = document.getElementById('1').value;
+        document.getElementById('8').innerHTML = nhap;
+        for(let i=0;i<arrname.length;i++) {
+            arrname.push(nhap)
+            
+        }
+        alert(arrname)
+
+    }
+    function edit() {
+
+    }
+    function delete1() {}
+</script>
+</html>
